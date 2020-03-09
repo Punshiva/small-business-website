@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of reset */
+
+@font-face {
+  font-family: Belta;
+  src: url(./belta-bold.ttf);
+}
+
+/* Mobile design start */
+body {
+  font-family: Arial;
+/*  background: url(./img/dark_wood.jpg) center;*/
+/*  background-attachment: fixed;*/
+    color: #404040;
+    font-size: 1.2em;
+    background-color: #e40421;
+    padding: 0 0.5em;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+font-family: 'Staatliches', cursive;
+
+    font-weight: bold;
+    
+    
+}
+
+
+a {
+  text-decoration: none;
+  padding-bottom: 0.2em;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.5;
+  color: #a9a9a9;
+}
+
+
+h1{
+  font-size: 3em;
+}
+
+h3{
+  font-size: 2em;
+}
+
+header nav ul li a{
+  color: white;
+}
+
+header nav{
+  margin: 2em 0;
+}
+
+header nav ul{
+  text-align: center;
+}
+
+header nav ul li{
+  display: inline;
+  margin-right: 2em;
+  font-size: 0.8em;
+  
+}
+
+header nav ul li:last-child{
+  margin: 0;
+}
+
+main{
+  background-color: white;
+  padding: 0 1em;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 2em;
+
+}
+
+.wrapper a{
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.wrapper p{
+  margin-bottom: 1em;
+}
+
+.wrapper img{
+  padding: 1em 0;
+}
+
+.wrapper h3{
+  text-align: center;
+}
+
+
+section{
+  padding: 2em 0;
+}
+
+
+/* Mobile design end */
+
+
+@media screen and (min-width: 760px){
+  /* link styles */
+a:link,
+a:visited {
+  color: #DC6903;
+}
+a:focus,
+a:hover,
+a:active {
+  color: #f9ab33;
+}
+
+.logo{
+    color: black;
+    background: white;
+}
+
+/* nav styles */
+nav,
+footer {
+  font-family: Belta;
+
+  padding: 1.2em 0;
+  font-size: 1.5em;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #efefef;
+  font-family: verdana;
+}
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
+  color: #fff;
+  border-bottom: 1px solid;
+}
+nav {
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  font-size: 0.55em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-block;
+}
+nav ul li a {
+  margin-left: 2em;
+}
+
+
+
+header {
+ 
+  background-size: cover;
+  background-position: top;
+}
+
+header nav{
+  margin-bottom: 0;
+}
+
+.hero {
+  /* grid styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  height: 90vh;
+    background: url(./img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 2em;
+  
+  
+}
+
+
+
+
+
+.hero-text {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-text p {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  margin-right: 30em;
+  color: lightgray;
+}
+
+.hero-text > h1 {
+  font-size: 7em;
+  letter-spacing: 0.1em;
+  color: #efefef;
+  margin-right: 20em;  
+}
+
+.hero-text> h2{
+    font-size: 2em;
+  letter-spacing: 0.1em;
+  color: whitesmoke;
+
+
+}
+.hero-text a {
+  border: 1px solid#f9ab33;
+  padding: 1em 2em;
+  color: #efefef;
+  border-radius: 5px;
+}
+
+.hero > * {
+  /* color: white; */
+  
+}
+.hero > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.breweries > h2 {
+  font-size: 3em;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.show {
+  text-align: center;
+  font-size: 4em;
+
+}
+
+.hero > article > p {
+    font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: 200;
+    
+}
+.hero > article > a {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s;
+  border-radius: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.hero > article > a:hover {
+  opacity: 0.6;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+ background: white;
+    padding: 2em 4em;
+}
+
+.wrapper section>h3{
+    color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+    margin-bottom: 0.2em;
+    border-bottom: 6px double;
+    text-align: center;
+}
+
+.wrapper p{
+    margin: 1em 0;
+}
+
+main {
+  padding: 5em 0;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+    padding: 2em 4em;
+
+}
+
+.craft-beers p,
+.spirit-desc p {
+  margin-bottom: 1em;
+}
+
+
+main a {
+  display: inline-block;
+  margin-top: 1em;
+  text-align: center;
+
+  border-radius: 5px;
+    padding: 0.5em 0;
+
+}
+
+
+.beers-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+
+section{
+    padding: 2em 0;
+}
+
+
+
+.spirits-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+
+.beers >h3,
+.spirits>h3{
+    
+    color: black;
+    text-align: center;
+    margin: 1em 0;
+     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+    border-bottom: 6px double #404040;
+}
+
+h3{
+        font-size: 4em;
+}
+
+.card>h3{
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+
+}
+
+/*About styles*/
+.about > h3{
+    font-size: 10em;    
+    letter-spacing:0.050em;
+      text-align: center;
+}
+
+.about >p{
+    font-size: 1.5em;
+    line-height: 1.55em;
+  box-shadow: 9px 8px 8px black;   
+}
+
+.about-card h3{
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.about-card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+}
+
+header a{
+    width: 10%;
+}
+
+.about-card-info>p{
+    font-size: 1.2em;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.75);
+    
+}
+
+/*Contact styles*/
+.contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+    margin-top: 10px;
+}
+
+.card h3{
+    
+    margin: 0.4em 0;
+}
+
+.follow ul{
+  text-align: center;
+}
+
+.follow > ul >li{
+    display: inline-block;
+    margin-right: 1em;
+    letter-spacing: 0.08em;
+    font-family: arial;
+    font-size: 0.875em;
+  
+}
+
+.follow > h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+}
+
+
+
+
